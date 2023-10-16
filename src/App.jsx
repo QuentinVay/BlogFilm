@@ -8,8 +8,7 @@ import './App.css'
 function App() {
 
   return (
-    <>
-      <Welcome />
+    <><Welcome />
       <MovieOfDay />
       <SlideFilm />
     </>

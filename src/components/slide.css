@@ -1,4 +1,3 @@
-
 :root {
     --currentIndex: 2;
     /* La valeur par défaut de l'index */
@@ -126,11 +125,17 @@ h2{
     color: white;
 }
 h3{
-    
     color: white;
 }
 article{
     padding: 1rem;
     width: 450px;
     color: white;
+}
+
+/* Active Item */
+.carousel-item.active {
+    transform: scale(1.2);
+    /* Agrandit l'élément actif */
+    z-index: 2;
 }
