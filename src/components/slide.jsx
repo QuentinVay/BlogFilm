@@ -11,7 +11,7 @@ function SlideFilm(params) {
       setCurrentIndex((prevIndex) => (prevIndex === 4 ? 4 : prevIndex + 1));
     };
     return(
-        <div>
+        <>
             <div className="blockcomponent">
                 <div className="containercarrousel">
                     <div className="carousel">
@@ -38,7 +38,7 @@ function SlideFilm(params) {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 export default SlideFilm
