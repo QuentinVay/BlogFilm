@@ -1,0 +1,50 @@
+.Tblock {
+    background-image: url("../assets/Horrorimg.jpg");
+    background-size: cover;
+    display: grid;
+    color: red;
+    grid-template-columns: 60% 40%;
+    border-radius: 12px;
+    cursor: url(../assets/spid.png), pointer;
+}
+
+.Texteblockl {
+    text-align: center;
+    justify-items: center;
+    font-size: 35px;
+
+    padding: 15px;
+    padding-top: 55px;
+    max-height: 230px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 45px;
+}
+
+.imgTblock {
+    border: 2px solid red;
+}
+
+.imgT {
+    width: 250px;
+    height: 375px;
+
+}
+
+.BlockB {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ButonT {
+    max-height: 45px;
+    margin-inline: 3px;
+}
+
+.MovieN {
+    overflow: hidden;
+    margin-inline: 5px;
+    margin-block: 2px;
+    padding-block: 7px;
+}
