@@ -51,19 +51,6 @@ function WelcomeFilm() {
                         </form>
                     </div>
                 </div>
-
-                {/* Pour Quentin, à supprimer pour Marcelo et Adrien */}
-                <div className="filteredFilms">
-                    {filteredFilmsByName.map((film, index) => (
-                        <div key={index}>
-                            <img src={film.image} />
-                            <h2>{film.nom}</h2>
-                            <p>Catégorie: {film.categorie}</p>
-                            <p>Note: {film.note}</p>
-                            <p>Résumé: {film.resume}</p>
-                        </div>
-                    ))}
-                </div>
             </div>
         </div>
     )

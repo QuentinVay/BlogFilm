@@ -1,12 +1,11 @@
 * {
-    max-width: 1280px;
     margin: 0;
-    padding: 2rem;
+    padding: 1rem;
     font-family: "Ubuntu", sans-serif;
 }
 
 .welcome {
-    width: 100%;
+    width: 100Vw;
 }
 
 .cover {

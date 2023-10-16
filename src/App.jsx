@@ -8,8 +8,9 @@ function App() {
 
   return (
     <>
-      <MovieOfDay />
-    <Welcome/>
+    <WelcomeFilm/>
+    <MovieOfDay />
+    <SlideFilm />
     </>
   )
 }

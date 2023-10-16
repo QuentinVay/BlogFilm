@@ -3,6 +3,7 @@ import './slide.css'
 
 function SlideFilm(params) {
     const [currentIndex, setCurrentIndex] = useState(2);
+    
     const prevSlide = () => {
       setCurrentIndex((prevIndex) => (prevIndex === 0 ? 0 : prevIndex - 1));
     };
@@ -35,6 +36,7 @@ function SlideFilm(params) {
                     </div>
                     <div className="contain-resume">
                         <h3>titre du film</h3>
+                        <article></article>
                     </div>
                 </div>
             </div>

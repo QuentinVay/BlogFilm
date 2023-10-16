@@ -1,7 +1,8 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     box-sizing: border-box;
+    width: 100%;
 }
 :root {
     --currentIndex: 2; /* La valeur par défaut de l'index */
