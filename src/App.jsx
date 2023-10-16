@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import SlideFilm from './components/slide'
-import WelcomeFilm from './components/Welcome'
+import Welcome from './components/Welcome'
 import films from './components/Films'
 import MovieOfDay from './components/Today';
+import './App.css'
 
 function App() {
 
   return (
     <>
-    <WelcomeFilm/>
-    <MovieOfDay />
-    <SlideFilm />
+      <Welcome />
+      <MovieOfDay />
+      <SlideFilm />
     </>
   )
 }

@@ -1,11 +1,7 @@
-* {
-    margin: 0;
-    padding: 1rem;
-    font-family: "Ubuntu", sans-serif;
-}
 
 .welcome {
-    width: 100Vw;
+    width: 100%;
+    padding: 1rem;
 }
 
 .cover {
@@ -17,11 +13,13 @@
     background: url("src/assets/backgroundWelcome.jpg");
     background-size: contain;
     background-position: center;
+    padding: 1rem;
 }
 
 .title {
     color: black;
     background: rgba(255, 255, 255, 0);
+    padding: 1rem;
 }
 
 .navbar {
@@ -31,6 +29,7 @@
     width: 100%;
     background: #444;
     height: 8px;
+    padding: 1rem;
 }
 
 .navbarCategories ul {
@@ -38,6 +37,7 @@
     padding: 0;
     display: flex;
     align-items: center;
+    padding: 1rem;
 }
 
 .navbarCategories li {
@@ -47,17 +47,21 @@
     font-size: 20px;
     display: inline;
     white-space: nowrap;
+    padding: 1rem;
 }
 
 .navbarCategories li:hover {
     color: white;
+    padding: 1rem;
 }
 
 .navbarSearchForm {
     display: flex;
+    padding: 1rem;
 }
 
 .navbarSearch input {
+    padding: 1rem;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -67,6 +71,7 @@
 .navbarSearch button {
     color: #fff;
     border: none;
+    padding: 1rem;
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;

@@ -1,6 +1,8 @@
+
 .Tblock {
     background-image: url("../assets/Horrorimg.jpg");
     background-size: cover;
+    width: 100vw;
     display: grid;
     color: red;
     grid-template-columns: 60% 40%;
@@ -25,7 +27,7 @@
 
 .imgT {
     width: 250px;
-    height: 375px;
+    height:375px;
 
 }
 
