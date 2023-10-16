@@ -1,39 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 :root {
-    --currentIndex: 2; /* La valeur par défaut de l'index */
-  }
-  
-.blockcomponent{
+    --currentIndex: 2;
+    /* La valeur par défaut de l'index */
+}
+
+.blockcomponent {
     width: 100vw;
     height: 100vh;
     border: 4px solid red;
 }
-.containercarrousel{
+
+.containercarrousel {
     width: 100%;
     height: 40%;
     background-color: black;
 }
-.blockdescription{
+
+.blockdescription {
     margin: auto;
     width: 90%;
     height: 60%;
     background-color: blue;
 }
-.parent{
+
+.parent {
     position: relative;
     display: flex;
     flex-direction: row;
-    gap:1rem;
+    gap: 1rem;
     border: 2px solid red;
-    margin:  0 auto ;
+    margin: 0 auto;
     width: 80%;
     height: 100%;
     overflow: hidden;
 }
+
 /* .child{
     margin-block: auto;
     background-color: blueviolet;
@@ -41,23 +41,27 @@
     min-width: 280px;
     height: 80%;
 }  */
-.previous, .next{
+.previous,
+.next {
     position: absolute;
     cursor: pointer;
     width: 50px;
     height: 50px;
     background-color: chartreuse;
     top: 50%;
-    transform:translateY(-50%) ;
+    transform: translateY(-50%);
     border-radius: 50%;
     z-index: 3;
 }
-.next{
+
+.next {
     right: 2rem;
 }
-.previous{
+
+.previous {
     left: 2rem;
-} 
+}
+
 /* Carousel Container */
 .carousel {
     display: flex;
@@ -65,7 +69,8 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    height: 300px;
+    /* Ajustez la hauteur selon vos besoins */
     overflow: hidden;
     position: relative;
 
@@ -75,28 +80,30 @@
 .carousel-container {
     display: flex;
     /* width:  100%; */
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
     /* transform: translateX(calc(-50% + (var(--currentIndex) * 20%))); */
-   
-  }
-  
-  /* Carousel Items */
-  .carousel-item {
-    width: 250px; /* Ajustez la largeur selon vos besoins */
-    height: 250px; /* Ajustez la hauteur selon vos besoins */
-    margin: 0 1rem; /* Espacement entre les éléments */
+
+}
+
+/* Carousel Items */
+.carousel-item {
+    width: 250px;
+    /* Ajustez la largeur selon vos besoins */
+    height: 250px;
+    /* Ajustez la hauteur selon vos besoins */
+    margin: 0 1rem;
+    /* Espacement entre les éléments */
     transition: transform 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ed2a2a; /* Couleur d'arrière-plan */
-  }
-  
-  /* Active Item */
-  .carousel-item.active {
-    transform: scale(1.2); /* Agrandit l'élément actif */
-    z-index: 2;
-  }
-  
+    background-color: #ed2a2a;
+    /* Couleur d'arrière-plan */
+}
 
-  
+/* Active Item */
+.carousel-item.active {
+    transform: scale(1.2);
+    /* Agrandit l'élément actif */
+    z-index: 2;
+}
