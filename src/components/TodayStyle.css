@@ -1,13 +1,29 @@
-
-.Tblock {
+.THoblock {
     background-image: url("../assets/Horrorimg.jpg");
     background-size: cover;
     width: 100vw;
     display: grid;
     color: red;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 65% 35%;
     border-radius: 12px;
     cursor: url(../assets/spid.png), pointer;
+    margin-block: 5px;
+    padding: 0;
+    align-items: center;
+}
+
+.TNoblock {
+    background-image: url("../assets/Noel.jpg");
+    background-size: cover;
+    display: grid;
+    color: white;
+    grid-template-columns: 65% 35%;
+    border-radius: 12px;
+    cursor: url(../assets/sapinN.png), pointer;
+    margin-block: 5px;
+    padding: 0;
+    align-items: center;
+
 }
 
 .Texteblockl {
@@ -15,7 +31,6 @@
     justify-items: center;
     font-size: 35px;
     padding: 15px;
-    padding-top: 55px;
     max-height: 230px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 45px;
@@ -23,12 +38,15 @@
 
 .imgTblock {
     border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
 }
 
 .imgT {
-    width: 250px;
-    height:375px;
-
+    width: 200px;
+    height: 305px;
 }
 
 .BlockB {
