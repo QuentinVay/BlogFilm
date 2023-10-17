@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import './Welcome.css'
 import films from './Films'
+import SlideFilm from './slide';
 
-function WelcomeFilm() {
-
-    const [selectedCategory, setSelectedCategory] = useState('Tous les films');
-    const [searchTerm, setSearchTerm] = useState('');
+function WelcomeFilm(props) {
+    const { selectedCategory, setSelectedCategory, searchTerm, setSearchTerm } = props;
 
     // Fonction de tri des films par catégorie
     const filteredFilms = films.filter(film => {
@@ -24,7 +23,7 @@ function WelcomeFilm() {
     return (
         <>
             <div className='cover'>
-                <h1 className='title'>Fanblog Film</h1>
+                <h1 className='title'>Movie</h1>
             </div>
 
             <div className='navbar'>

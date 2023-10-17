@@ -1,42 +1,56 @@
 import React, { useState } from 'react';
 import './slide.css'
+import films from './Films';
 
-function SlideFilm(params) {
+function SlideFilm({ selectedCategory, searchTerm, setSearchTerm }) {
     const [currentIndex, setCurrentIndex] = useState(2);
 
+    // Filtrer les films en fonction de la catégorie sélectionnée et du terme de recherche
+    const filteredFilms = films.filter(film => {
+        if (selectedCategory === 'Tous les films' || film.categorie === selectedCategory) {
+            return film.nom.toLowerCase().includes(searchTerm.toLowerCase());
+        }
+        return false;
+    });
+
+
     const prevSlide = () => {
-      setCurrentIndex((prevIndex) => (prevIndex === 0 ? 0 : prevIndex - 1));
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? 0 : prevIndex - 1));
     };
-    
+
     const nextSlide = () => {
-      setCurrentIndex((prevIndex) => (prevIndex === 4 ? 4 : prevIndex + 1));
+        setCurrentIndex((prevIndex) => (prevIndex === 4 ? 4 : prevIndex + 1));
     };
-    return(
+    return (
         <>
             <div className="blockcomponent">
                 <div className="containercarrousel">
                     <div className="carousel">
                         <div className="carousel-container">
                             <div className="previous" onClick={prevSlide}></div>
-                                {Array.from({ length: 5 }, (_, index) => (
-                                    <div
-                                        className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
-                                        key={index}>
-                                        <div className="child"></div>
+                            {filteredFilms.map((film, index) => (
+                                <div
+                                    className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
+                                    key={index}
+                                >
+                                    <div className="child">
+                                        <img src={film.image} />
                                     </div>
-                                ))}
+                                </div>
+                            ))}
                             <div className="next" onClick={nextSlide}></div>
                         </div>
                     </div>
                 </div>
                 <div className="blockdescription">
                     <div className="contain-card">
-                        <div className="card"><img src="src/assets/Inception.jpg" alt="" /></div>
-                        <div className="contain-description"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quidem.</h3></div>
+                        <div className="card"><img src={filteredFilms[currentIndex].image} alt="" /></div>
+                        <div className="contain-description"><h3>{filteredFilms[currentIndex].note}</h3></div>
                     </div>
                     <div className="contain-resume">
-                        <h2>Titre du Film</h2>
-                        <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt facere aliquam veniam ipsam itaque aperiam veritatis iure totam sunt ut culpa, dignissimos earum obcaecati enim eum accusamus ea eos impedit beatae asperiores alias corrupti ratione sit quae? Aliquam excepturi nemo sunt obcaecati ut alias eos repellat quam itaque voluptates quisquam voluptatum velit pariatur laboriosam quibusdam enim eveniet, debitis, temporibus ullam.</article>
+                        <h2>{filteredFilms[currentIndex].nom}</h2>
+                        <article>{filteredFilms[currentIndex].resume}</article>
+                        <article>{filteredFilms[currentIndex].avis}</article>
                     </div>
                 </div>
             </div>
@@ -45,4 +59,4 @@ function SlideFilm(params) {
 }
 export default SlideFilm
 
-  
+
