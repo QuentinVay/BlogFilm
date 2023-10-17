@@ -27,9 +27,10 @@ function MovieOfDay() {
             d'HORREUR! Voici notre recommandation du moment!</div>;
     const Notext =
         < div > Noyeux Joël !  (Ce référé à Quantin, notre CEO, pour toute plainte envers notre humour.Merci). Quoi de mieux qu'un bon film d'animation, au coin de l'incendie avec un chocolat chaud et de la neige tombant par la fenêtre!
-            Nous vous présentons notre recommandation pour Noël!
-        </div >
+            Nous vous présentons notre recommandation pour Noël!</div >;
+
     const musi = <audio controls autoPlay ><source src="src\assets\All-is-fine.mp3" type="audio/mp3"></source></audio>
+    // Pour noel changer la classNAme di 1er div par TNOblock et ajouter {musi} à coter du texte. pour horreur metre THoblock.
     return (
         <div className="TNoblock"><div className="Texteblockl" >{Notext}{musi}</div>
             <div ><figure className="imgTblock"><img className="imgT" src={filmN.image}></img>
