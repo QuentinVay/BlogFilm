@@ -30,7 +30,8 @@ function MovieOfDay() {
             Nous vous présentons notre recommandation pour Noël!</div >;
 
     const musi = <audio controls autoPlay ><source src="src\assets\All-is-fine.mp3" type="audio/mp3"></source></audio>
-    // Pour noel changer la classNAme di 1er div par TNOblock et ajouter {musi} à coter du texte. pour horreur metre THoblock.
+    // Pour noël changer la className du 1er div par TNoblock et ajouter {musi} à coter du texte.
+    //  pour horreur metre THoblock.
     return (
         <div className="TNoblock"><div className="Texteblockl" >{Notext}{musi}</div>
             <div ><figure className="imgTblock"><img className="imgT" src={filmN.image}></img>
@@ -40,7 +41,6 @@ function MovieOfDay() {
                     {Filmei < horroFilm("Animation").length - 1 ? <button className="ButonT" onClick={handleClickN}>next</button> : null}
                 </div></figure></div>
         </div>
-
     )
 
 };
