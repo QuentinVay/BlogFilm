@@ -1,6 +1,7 @@
 .THoblock {
     background-image: url("../assets/Horrorimg.jpg");
     background-size: cover;
+    width: 100vw;
     display: grid;
     color: red;
     grid-template-columns: 65% 35%;
@@ -29,7 +30,6 @@
     text-align: center;
     justify-items: center;
     font-size: 35px;
-
     padding: 15px;
     max-height: 230px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -47,7 +47,6 @@
 .imgT {
     width: 200px;
     height: 305px;
-
 }
 
 .BlockB {
