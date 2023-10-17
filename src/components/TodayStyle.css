@@ -7,7 +7,7 @@
     grid-template-columns: 65% 35%;
     border-radius: 12px;
     cursor: url(../assets/spid.png), pointer;
-    margin-block: 5px;
+    margin-block: 15px;
     padding: 0;
     align-items: center;
 }
@@ -17,10 +17,10 @@
     background-size: cover;
     display: grid;
     color: white;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 64% 34%;
     border-radius: 12px;
     cursor: url(../assets/sapinN.png), pointer;
-    margin-block: 5px;
+    margin-block: 15px;
     padding: 0;
     align-items: center;
 
@@ -34,6 +34,7 @@
     max-height: 230px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 45px;
+    margin-left: 6px;
 }
 
 .imgTblock {
@@ -42,11 +43,13 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
+    margin-left: 16px;
 }
 
 .imgT {
     width: 200px;
     height: 305px;
+    margin-block: 6px;
 }
 
 .BlockB {
