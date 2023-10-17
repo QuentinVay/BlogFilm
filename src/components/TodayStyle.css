@@ -1,4 +1,4 @@
-.Tblock {
+.THoblock {
     background-image: url("../assets/Horrorimg.jpg");
     background-size: cover;
     display: grid;
@@ -9,6 +9,20 @@
     margin-block: 5px;
     padding: 0;
     align-items: center;
+}
+
+.TNoblock {
+    background-image: url("../assets/Noel.jpg");
+    background-size: cover;
+    display: grid;
+    color: white;
+    grid-template-columns: 65% 35%;
+    border-radius: 12px;
+    cursor: url(../assets/sapinN.png), pointer;
+    margin-block: 5px;
+    padding: 0;
+    align-items: center;
+
 }
 
 .Texteblockl {
